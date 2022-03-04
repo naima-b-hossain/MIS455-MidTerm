@@ -1,0 +1,79 @@
+/* common css */
+*{
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+}
+
+/* nav bar */
+.sign-in-button{
+    color: white;
+    background-color: green;
+    border-radius: 20px;
+}
+
+.sign-in-button:hover{
+    color: black;
+}
+
+/* banner */
+.banner-left p:first-child{
+    color: tomato;
+}
+
+.banner-left h1{
+    color: black;
+    font-weight: bold;
+}
+
+/* card */
+.card-container{
+    padding: 30px 50px;
+    background-color: #c3f7d1;
+}
+
+.card-container:hover{
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    background-color: white;
+}
+
+/* testimonial */
+.testimonial h1{
+    font-weight: bold;
+}
+
+/* footer */
+.footer{
+    background-color: #1E1D00;
+    color: white;
+}
+
+.footer-top{
+    display: grid;
+    justify-content: center;
+    grid-template-columns: 40% 20% 20% 20%;
+    grid-row-gap: 50px;
+    grid-column-gap: 50px;
+    margin: 100px 0;
+}
+
+/* Extra small devices (portrait phones, less than 576px) */ 
+@media(min-width: 320px) and (max-width: 575px) { 
+    .footer-top{
+        grid-template-columns: 100%;
+    }
+}
+
+/* Small devices (landscape phones, 576px and up) */
+@media(min-width: 576px) and (max-width: 767px) { 
+    .footer-top{
+        grid-template-columns: 100%;
+    }
+}
+
+/* Medium devices (tablets, 768px and up) */ 
+@media(min-width: 768px) and (max-width: 991px) { 
+    .footer-top{
+        grid-template-columns: 50% 50%;
+    }
+}
